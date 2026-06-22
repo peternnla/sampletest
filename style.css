@@ -1,0 +1,385 @@
+body {
+	font-family: 'Poppins', sans-serif;
+}
+header .carousel-inner .item {
+	height: 100vh;
+}
+.nav navbar-nav navbar-right:hover{
+	color:#111111;
+}
+.navbar-inverse {
+	background-color: transparent;
+	border-color: transparent;
+}
+.navbar-inverse .navbar-brand {
+	color: #111111;
+	font-size: 40px;
+	padding: 40px 15px;
+	font-weight: 1000;
+}
+.nav.navbar-nav .navbar-right {
+	margin: 20px 0;
+}
+.navbar-inverse .navbar-nav.li.a {
+	color: #111111;
+	text-transform: uppercase;
+}
+
+.banner {
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+.carousel-caption {
+	padding-bottom: 250px;
+	font-family: poppins;
+}
+.carousel-caption h2 {
+	font-size: 100px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.carousel-caption h2 span {
+	color: #EDBB00;
+}
+.carousel-caption a {
+	background: #EDBB00;
+	padding: 15px 35px;
+	display: inline-block;
+	margin-top: 15px;
+	color: #fff;
+	text-transform: uppercase;
+	border-radius: 25px;
+}
+.carousel-control.right {
+	background-image: none;
+}
+.carousel-control.left {
+	background-image: none;
+}
+.carousel-indicators .active {
+	background-color: #EDBB00;
+	border-color: #EDBB00;
+}
+
+.row{
+margin-top: 20px;
+margin-right: 1px;
+}
+.product-bottom .fa{
+color: #F2F234;
+font-size: 10px;
+}
+
+
+.product-bottom h2{
+font-size: 20px;
+font-weight: bold;
+}
+
+.product-bottom h4{
+font-size: 15px;
+}
+.product-bottom h5{
+font-size: 14px;
+padding-bottom: 10px;
+}
+
+.overlay{
+display:block;
+opacity: 0;
+position: absolute;
+top: 10%;
+margin-left:0;
+width: 50px;
+}
+
+.product-top:hover .overlay {
+opacity: 1;
+transition: 1s;
+transform: translateY(-20px);
+} 
+
+.product-top:hover {
+opacity: 1;
+transition: 1s;
+transform: translateY(-20px);
+}
+
+.product-top:hover:before {
+opacity: 1;
+}
+
+.overlay .fa{
+cursor: pointer;
+background-color: #E1E1DF; 
+color: #000000;
+height: 35px;
+width: 35px;
+font-size: 20px;
+padding: 20 px;
+margin: 10%;
+margin-bottom: 5%;
+}
+
+.overlay .btn-secondary{
+background: transparent !important;
+border: none !important;
+box-shadow: none !important;
+}
+
+.row{
+display: flex;
+flex-wrap: wrap;
+}
+
+.contacts{
+position: relative;
+min-height: 100vh;
+padding: 50px 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background: url(Details/nikebasketball.jpg);
+background-size: cover;
+}   
+
+.contacts .content{
+max-width: 800px;
+text-align: center;
+}
+
+.contacts .content h2{
+font-size: 35px;
+font-weight: 400;
+color: #fff;
+}
+
+.contacts .content p{
+font-weight: 300;
+color: #fff;
+}
+
+.contacts .container{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 50px;
+}
+
+.contacts .container .contactinfo{
+width: 50%;
+display: flex;
+flex-direction: column;
+}
+
+.contacts .container .contactinfo .box{
+position: relative;
+display: 20px 0;
+display: flex;
+}
+
+.contacts .container .contactinfo .box .icon{
+width: 50px;
+height: 50px;
+background: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+font-size: 22px;
+}
+
+.contacts .container .contactinfo .box .text{
+display:flex;
+margin-left: 20px;
+font-size: 16px;
+color: #fff;
+flex-direction: column;
+font-weight: 300;
+}
+
+.contacts .container .contactinfo .box .text h3{
+font-weight: 500;
+color: #111111;
+}
+
+.contactForm{
+width: 40%;
+padding: 40px;
+background: #fff;
+}
+
+.contactForm h2{
+font-size: 30px;
+color: #333;
+font-weight: 500;
+}
+
+.contactForm .inputBox{
+position: relatve;
+width: 100%;
+margin-top: 10px;
+}
+
+.contactForm .inputBox input, 
+.contactForm .inputBox textarea{
+width: 100%;
+padding: 2px;
+font-size:16 px;
+margin: 10px 0;
+border: none;
+border-bottom: 1px solid #333;
+outline: none;
+resize: none;
+}
+
+.contactForm .inputBox span{
+position: relative;
+left: 0;
+padding: 5px 0;
+font-size: 16px;
+margin: 10px 0;
+pointer-events: none;
+transition: 0.5s;
+color: #666;
+}
+
+.contactForm .inputBox input:focus - span{
+color: #e91e63;
+font-size: 12 px;
+transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+width: 100px;
+background: #00bcd4;
+color: #fff;
+border: none;
+cursor: pointer;
+padding: 10px;
+font-size: 18px;
+}
+
+.footer ul{
+list-style:none;
+}
+.footer{
+background-color: #181818;
+padding: 70px 0;
+}
+
+.footer-col{
+width: 25%;
+padding: 0 15px;
+}
+
+.footer-col h4{
+font-size: 18px;
+color: #ffffff;
+text-transform: capitalize;
+margin-bottom: 30px;
+font-weight: 500;
+position: relative;
+}
+
+.footer-col h4::before{
+content: ' ';
+position: absolute;
+left: 0;
+bottom: -10px;
+background-color: #72F7EC;
+height: 2px;
+box-sizing: border-box;
+width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+margin-bottom: 20px;
+}
+.footer-col ul li a{
+font-size: 16px;
+text-transform: capitalize;
+color: #ffffff;
+text-decoration: none;
+font-weight: 300;
+color: #bbbbbb;
+display: block;
+transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+color: #FEFEFE;
+padding-left: 8px;
+}
+
+.footer-col .social-links a{
+display: inline-block;
+height: 40px;
+width: 40px;
+background-color: rgba(255,255,255,0.2);
+margin: 0 10px 10px 0;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: #181818;
+transition: all 0.3s ease;
+}
+
+.footer-col .social-links a:hover{
+color: #24262b;
+background-color: #ffffff;
+}
+
+
+/*responsive css*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.carousel-caption {
+		padding-bottom: 350px;
+	}
+	.carousel-caption h2 {
+		font-size: 50px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.navbar-inverse .navbar-brand {
+		font-size: 30px;
+		padding: 20px 15px;
+	}
+	.navbar-collapse {
+		background: rgba(0, 0, 0, 0.5);
+	}
+	.carousel-caption {
+		padding-bottom: 120px;
+	}
+	.carousel-caption h2 {
+		font-size: 25px;
+	}
+	.carousel-caption h3 {
+		font-size: 18px;
+	}
+	.carousel-caption a {
+		padding: 10px 25px;
+	}
+}
+
+@media (max-width: 991px){
+	.contacts{
+	padding: 50px;
+	}
+	.contacts .container{
+	flex-direction: column;
+	}
+	.contacts .container .contactinfo{
+	margin-bottom: 40px;
+	}
+	.contacts .container .contactinfo,
+	.contactForm{
+	width: 100%;
+	}
+}

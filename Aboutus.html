@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NIKE PH. JUST DO IT</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<style>
+body {
+	font-family: 'Poppins', sans-serif;
+}
+header .carousel-inner .item {
+	height: 100vh;
+}
+.nav navbar-nav navbar-right:hover{
+	color:#111111;
+}
+.navbar-inverse {
+	background-color: transparent;
+	border-color: transparent;
+}
+.navbar-inverse .navbar-brand {
+	color: #111111;
+	font-size: 40px;
+	padding: 40px 15px;
+	font-weight: 1000;
+}
+.nav.navbar-nav .navbar-right {
+	margin: 20px 0;
+}
+.navbar-inverse .navbar-nav.li.a {
+	color: #111111;
+	text-transform: uppercase;
+}
+.banner{
+position: relative;
+width: 100%;
+min-height: 100vh;
+padding: 0 100px;
+display: flex; 
+justify-content: flex-start;
+align-items: center;
+}
+
+.banner:before{
+content: ' ';
+position: absolute;
+right: 0;
+top: 0;
+width: 400px;
+height: 100%;
+background:rgba (0,0,0,0.5);
+}
+
+.banner video{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+opacity: 0.1;
+pointer-events: none;
+}
+
+.banner .textBox{
+position: relative;
+max-width: 550px;
+z-index: 2;
+}
+
+.banner. .textBox h2{
+color: #fff;
+font-size: 4em;
+}
+
+.banner .textbox p{
+color: #fff;
+font-size: 1.5em;
+margin: 5px 0 25px;
+}
+
+.banner .textBox a{
+position: relative;
+display: inline-block;
+background: #fff;
+color: #111;
+padding: 15px 25px;
+text-decoration: none;
+font-size: 1.1em;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-weight: 500;
+}
+
+.banner .videoBx{
+position: relative;
+background: #fff;
+margin-left: 40px;
+width: 100%;
+height: 400px;
+z-index: 1;
+}
+
+.banner .videoBx video{
+opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+	.navbar-inverse .navbar-brand {
+		font-size: 30px;
+		padding: 20px 15px;
+	}
+	.navbar-collapse {
+		background: rgba(0, 0, 0, 0.5);
+	}
+	.carousel-caption {
+		padding-bottom: 120px;
+	}
+	.carousel-caption h2 {
+		font-size: 25px;
+	}
+	.carousel-caption h3 {
+		font-size: 18px;
+	}
+	.carousel-caption a {
+		padding: 10px 25px;
+	}
+} 
+
+.about-section{
+background:url(Details/georgie-cobbs-Wi5VkZbvH7w-unsplash.jpg) no-repeat left;
+background-size: 45%;
+background-color: #fdfdfd;
+overflow: hidden;
+padding: 100px 0;
+}
+
+.inner-container{
+width: 55%;
+float: right;
+background-color: #fdfdfd;
+padding: 150px;
+}
+
+.inner-container h1{
+margin-bottom: 30px;
+font-size: 30px;
+font-weight: 900;
+}
+
+.text{
+font-size: 20px;
+color: #545454;
+line-height: 30px;
+text-align: justify;
+margin-bottom: 40px;
+}
+
+
+
+.about-sections{
+background:url(Details/Detroit_Boys_and_Girls_Club_1_native_1600.jpg) no-repeat right;
+background-size: 45%;
+background-color: #fdfdfd;
+overflow: hidden;
+padding: 100px 0;
+}
+
+.about-sections .inner-container{
+width: 55%;
+float: left;
+background-color: #fdfdfd;
+padding: 150px;
+}
+
+.about-sections .inner-container h1{
+margin-bottom: 30px;
+font-size: 30px;
+font-weight: 900;
+}
+
+.about-sections .text{
+font-size: 20px;
+color: #545454;
+line-height: 30px;
+text-align: justify;
+margin-bottom: 40px;
+}
+
+
+@media only screen and (max-width: 991px) {
+	.banner{
+	padding: 150px 50px 0;
+	flex-direction: column;
+	}
+	.banner:before{
+	display:none;
+	}
+	.banner .textBox{
+	max-width: 100%;
+	}
+	.banner .textBox h2{
+	font-size: 2.5em;
+	}
+	.banner .videoBx{
+	width: 100%;
+	height: 200px;
+	margin: 40px 0 100px;
+	}
+
+
+@media screen and (max-width:1200px){
+	.inner-container{
+	padding: 80px;
+	}
+}
+@media screen and (max-width:1000px){
+	.about-section{
+	background-size: 100%;
+	padding: 100px 40px;
+	}
+	.inner-container{
+	width: 100%;
+	}
+}
+
+
+@media screen and (max-width:1200px){
+	.about-sections .inner-container{
+	padding: 80px;
+	}
+}
+@media screen and (max-width:1000px){
+	.about-sections{
+	background-size: 100%;
+	padding: 100px 40px;
+	}
+	.about-sections .inner-container{
+	width: 100%;
+	}
+}
+
+.footer ul{
+list-style:none;
+}
+.footer{
+background-color: #181818;
+padding: 70px 0;
+}
+
+.footer-col{
+width: 25%;
+padding: 0 15px;
+}
+
+.footer-col h4{
+font-size: 18px;
+color: #ffffff;
+text-transform: capitalize;
+margin-bottom: 30px;
+font-weight: 500;
+position: relative;
+}
+
+.footer-col h4::before{
+content: ' ';
+position: absolute;
+left: 0;
+bottom: -10px;
+background-color: #72F7EC;
+height: 2px;
+box-sizing: border-box;
+width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+margin-bottom: 20px;
+}
+.footer-col ul li a{
+font-size: 16px;
+text-transform: capitalize;
+color: #ffffff;
+text-decoration: none;
+font-weight: 300;
+color: #bbbbbb;
+display: block;
+transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+color: #FEFEFE;
+padding-left: 8px;
+}
+
+.footer-col .social-links a{
+display: inline-block;
+height: 40px;
+width: 40px;
+background-color: rgba(255,255,255,0.2);
+margin: 0 10px 10px 0;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: #181818;
+transition: all 0.3s ease;
+}
+
+.footer-col .social-links a:hover{
+color: #24262b;
+background-color: #ffffff;
+}
+
+</style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#"><img src="Details/nike.png" style="height: 60px"></a>
+                </div>
+
+                
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Categories</a></li>
+                        <li><a href="Aboutus.html">About Us</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                        <li><a href="#">Log In</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+</header>
+
+	<div class="banner">
+		<video src="Details/nikeph.mp4" muted autoplay loop type="mp4"> </video>
+		<div class="textBox">
+		<h2>ABOUT NIKE</h2>
+		<p>Our mission is what drives us to do everything possible to expand human potential. We do that by creating groundbreaking sport innovations, by making our products more sustainably, by building a creative and diverse global team and by making a positive impact in communities where we live and work.</p>
+		<a href="#"> Read More</a>
+		</div>
+		<div class="videoBx">
+		<video src="Details/nikeph.mp4" muted autoplay loop type="mp4"> </video>
+		</div>
+	</div>
+
+<div class="about-section">
+	<div class="inner-container">
+		<h1>Who are We?</h1>
+		<p class="text">
+			Nike is one of the best and known company in sports history. It delivers innovative products, accessories, apparel, equipment, and good services for everyone.
+		</p>
+	</div>
+</div>
+
+<div class="about-sections">
+	<div class="inner-container">
+		<h1>Why choose us?</h1>
+		<p class="text">
+			Athletes in all different sports around the world choose to wear nike over in any other brand. Nike are creating a change for all that focus on education, leadership, and development for the better community. 
+		</p>
+	</div>
+</div>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col">
+				<h4>Nike PH</h4>
+				<ul>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-col">
+				<h4> Get Help</h4>
+				<ul>
+					<li><a href="#">FAQs</a></li>
+					<li><a href="#">Shipping</a></li>
+					<li><a href="#">Payment Method</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-col">
+				<h4>Online Shop</h4>
+				<ul>
+					<li><a href="#">Shoes</a></li>
+					<li><a href="#">Shirts & Tops</a></li>
+					<li><a href="#">Hoodies</a></li>
+					<li><a href="#">Bags</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-col">
+				<h4>Follow Us </h4>
+				<div class="social-links">
+					<a href="#"><i class="fab fa-facebook text-white mx-0"></i></a>
+					<a href="#"><i class="fab fa-twitter-square text-white mx-4"></i></a>
+					<a href="#"><i class="fab fa-instagram text-white"></i></a>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</footer>
+	
+
+
+</body>
+
+</html>
